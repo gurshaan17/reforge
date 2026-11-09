@@ -15,7 +15,9 @@ Treat existing brand identity and imagery as constraints, including on unfinishe
 
 Identify what already works: the strongest image, distinctive personality, and most compelling message. Preserve and amplify those strengths. Choose an emotional direction grounded in the brand and audience, such as welcoming, calm, playful, confident, or inspiring; ask only if ambiguity would materially change the design.
 
-Summarize the highest-impact weaknesses briefly: hierarchy, message, composition, typography, depth, or friction. Choose a concrete direction within the existing brand: mood, type hierarchy, composition, and a compatible signature treatment using the current palette. Avoid applying the same visual recipe to every product.
+Conclude the audit with a brief working design brief: the visitor's task, the biggest observed obstacle, the intended visual focal point, and up to three observable improvements. For example: explain the product through the headline and image, make the primary action visually dominant, and keep the product screenshot legible on mobile. Ground these targets in inspected content; label assumptions. Keep the brief in the working response rather than creating a required document or approval gate. Scale it down for narrow edits.
+
+Choose a concrete direction within the existing brand: mood, type hierarchy, composition, and a compatible signature treatment using the current palette. Use the brief to decide which changes earn their place.
 
 ## Preserve the brand and imagery
 
@@ -33,6 +35,8 @@ Prioritize the changes with the greatest visible benefit: typography, spacing, h
 
 ### Message and composition
 
+Read [Composition](references/composition.md) when choosing or changing page layout, section hierarchy, image scale, or responsive reading order. Use the content and visitor task to choose the structure.
+
 - Make the first screen explain the product, intended audience, and useful outcome. Give the primary action a specific label and supporting context where needed.
 - Rewrite headlines, supporting copy, and CTAs when they improve clarity. Preserve factual meaning and the existing brand voice. Use supplied evidence for testimonials, metrics, logos, pricing, and guarantees; never invent social proof.
 - Organize the page around the visitor's decision: promise, product evidence, benefits, objections, and action. Improve the order and presentation of existing sections without silently dropping their content or imagery. For new sections, include only those that earn their place; this is not a mandatory section template.
@@ -47,7 +51,7 @@ Prioritize the changes with the greatest visible benefit: typography, spacing, h
 
 ### Depth and backgrounds
 
-Read [Background treatments](references/backgrounds.md) when selecting or implementing texture, atmosphere, imagery, grids, or optical effects. It contains the user's 22-treatment palette and combination guidance.
+Read [Background treatments](references/backgrounds.md) when selecting or implementing texture, atmosphere, imagery, grids, or optical effects. It contains selection criteria, a 22-treatment palette, combination guidance, and fallback checks.
 
 Choose effects for the brand and content, not merely to fill empty space. Usually use one dominant treatment and at most one supporting treatment per visual region. Flat space is useful breathing room. Preserve quiet zones behind reading and action areas. Apply a coherent treatment system across sections rather than a different effect everywhere.
 
@@ -79,7 +83,9 @@ Before delivering, assess the rendered result against these questions:
 - Is there a distinctive detail worth remembering that belongs to this brand?
 - Do mobile and the rest of the page receive the same care as the hero?
 
-For each weak answer, identify a specific cause and revise within scope. Recheck the changed area; stop when the identified issues are resolved rather than pursuing endless aesthetic variants. These are design assessments, not evidence of increased happiness or conversions.
+Review the observable improvements from the design brief against the rendered result. For an unmet target or weak answer, name the location, visible symptom, and likely cause before editing. For example: “On the narrow layout, the screenshot labels are unreadable because the desktop composition has been scaled down.” Make a focused correction, render again, and inspect the affected region and any layout it displaced. An assertion that the page “looks better” is not verification.
+
+Stop when the identified issues and relevant regressions are resolved; avoid unrelated aesthetic variants. If a target cannot be verified with available tools, report it as unverified. These are design assessments, not evidence of increased happiness or conversions.
 
 When before screenshots are available, present a comparable before and after using the same viewports and corresponding page regions, with real content and consistent loading states. Explain what improved and what was preserved. If rendering is unavailable, state that limitation rather than implying a visual comparison was performed.
 

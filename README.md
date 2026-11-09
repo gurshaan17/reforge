@@ -6,7 +6,7 @@ Reforge guides your coding agent through a short audit, implementation, and veri
 
 ## Before and after
 
-A Metaverse landing-page redesign, shown before and after.
+A Metaverse landing-page redesign, shown before and after. This example changes the logo, palette, theme, and product imagery. Changes of this scope require explicit rebranding and asset-replacement authorization; Reforge preserves existing brand identity and imagery by default.
 
 ### Before
 
@@ -85,7 +85,7 @@ For better results, provide the target route, files, URL, or screenshots; the in
 4. **Verify the result.** Inspect the full page or onboarding path where tools permit, check relevant interactions and project checks, and compare the result with the baseline.
 5. **Deliver.** Explain the changes, rationale, verification, and any limitations. Provide comparable before-and-after views when screenshots are available.
 
-The included references cover 22 background treatments and their combination guidance, plus mobile onboarding considerations such as progress, permissions, safe areas, recovery, and keyboard behavior. They are loaded when relevant.
+The included references cover content-led composition and responsive reading order, selection and fallback guidance for 22 background treatments, and onboarding flow analysis including progress, permissions, saved state, recovery, and keyboard behavior. They are loaded when relevant. The initial audit sets observable improvement targets; the final review checks those targets against rendered output and revisits specific unresolved issues.
 
 ## Scope and expectations
 
@@ -112,6 +112,7 @@ reforge/
         │   └── openai.yaml
         └── references/
             ├── backgrounds.md
+            ├── composition.md
             └── onboarding.md
 ```
 
@@ -135,3 +136,9 @@ Before submitting a change:
 - For behavioral changes, describe the observed problem, the proposed improvement, and how you evaluated it. Distinguish visual preference from a reusable lesson.
 
 Report problems or propose improvements through [GitHub issues](https://github.com/gurshaan17/reforge/issues) and pull requests. Include the prompt, relevant context, expected behavior, and actual result; remove private project data before sharing.
+
+### Evaluate skill revisions
+
+Compare the previous and proposed skill on several different starting projects, such as a product landing page, a content-heavy page, and a mobile onboarding flow. Use the same prompt, starting assets, implementation permissions, and available tools for each paired comparison. Keep generated results outside the skill package.
+
+Review task clarity, brand and image preservation, responsive composition, interaction correctness, and visual quality using comparable screenshots and observed behavior. Record concrete failures and owner feedback rather than assigning unsupported conversion claims. Distinguish a preference specific to one brand from a recurring problem before adding a new instruction. Structural validation confirms packaging; improved design output requires these real-project comparisons.

@@ -2,6 +2,21 @@
 
 Choose by product character, content density, and rendering budget. The suggestions below are starting points, not fixed industry assignments. Preserve the user's requested aesthetic when it remains usable.
 
+## Select a treatment
+
+Start with the region's content and the existing imagery. Identify the treatment's job: separate sections, frame product evidence, reinforce brand character, or establish atmosphere. If imagery and typography already provide the needed emphasis, choose a plain surface.
+
+For a selected treatment, decide:
+
+- **Placement:** locate the focal area and the quiet zone behind reading and actions. Keep decorative contrast subordinate to the intended focal point.
+- **Fit:** use the existing palette and motifs. A treatment that depends on a new palette or replacement imagery requires that scope to be authorized.
+- **Delivery:** choose CSS/SVG for simple geometry and optimized raster assets for material detail. Prefer a static asset when animation adds no useful feedback.
+- **Adaptation:** specify how the region behaves on narrow screens, with reduced motion, and before or without its decorative asset. A solid base surface should keep text and controls usable when decoration fails to load.
+
+Evaluate candidates against the actual content, rather than choosing a treatment by industry label. Keep these decisions brief; a separate specification is unnecessary.
+
+## Treatment palette
+
 | Treatment | Useful character or placement | Implementation and restraint |
 | --- | --- | --- |
 | Felt texture | Soft, tactile, comforting surfaces | Use a subtle tiled raster; keep fibers low contrast and away from fine text. |
@@ -34,3 +49,9 @@ Select a base and an accent with different jobs. Good starting pairs include pap
 When two effects compete in frequency, contrast, or saturation, reduce one or separate their regions. Establish one focal point; use masks, fades, scrims, or solid content surfaces to protect reading. Carry a shared palette or texture scale across the page. Mobile may need a simpler crop or a static variant.
 
 Inspect the final rendering for text contrast, moiré, tiling seams, compression artifacts, and distracting repetition. If the effect makes the action harder to find, simplify it. Do not add motion merely because a treatment supports it.
+
+## Verify the treatment in context
+
+Inspect the actual region at desktop and mobile widths, including the busiest and brightest parts behind content. Check that the product image retains its meaning and prominence, controls remain easy to locate, and decorations neither intercept input nor create overflow.
+
+Check the static or reduced-motion variant and the asset-loading fallback where applicable. If the treatment competes with the message, first reduce its extent, density, or contrast; use a plain surface if it still obscures the intended hierarchy. Judge the result with real content rather than an empty background preview.
