@@ -4,6 +4,18 @@ An agent skill for redesigning landing pages and mobile onboarding while keeping
 
 Reforge guides your coding agent through a short audit, implementation, and verification. It focuses on typography, hierarchy, composition, image framing, and clearer actions while preserving existing colors, fonts, imagery, and voice.
 
+## Before and after
+
+A Metaverse landing-page redesign, shown before and after.
+
+### Before
+
+![Metaverse landing page before redesign: dark background with a virtual HQ headline and game screenshot](assets/metaverse-before.png)
+
+### After
+
+![Metaverse landing page after redesign: light background with expressive typography and an illustrated virtual workspace](assets/metaverse-after.png)
+
 ## Install
 
 Run this from the project where you want to use Reforge:
@@ -28,12 +40,12 @@ Use a current Node.js installation that meets the [skills CLI requirements](http
 
 ## Use
 
-Open your project in your coding agent, then invoke the installed skill using your agent's skill interface. Where dollar-sign invocation is supported, use `$reforge` and describe the page or flow to improve.
+Open your project in your coding agent, type `/reforge`, and describe the page or flow to improve. If your harness uses a different skill invocation syntax, use its equivalent.
 
 ### Redesign a landing page
 
 ```text
-Use $reforge to audit and redesign the landing page in src/app/page.tsx.
+/reforge audit and redesign the landing page in src/app/page.tsx.
 Our audience is independent designers, and the primary action is starting
 a free trial. Keep our existing palette, fonts, logo, and product screenshots.
 Implement the changes and check desktop and mobile layouts.
@@ -42,7 +54,7 @@ Implement the changes and check desktop and mobile layouts.
 ### Polish an existing page
 
 ```text
-Use $reforge to improve the pricing page's typography, spacing, and hierarchy.
+/reforge improve the pricing page's typography, spacing, and hierarchy.
 Preserve the pricing, content, images, and checkout behavior. Keep the scope
 to this page and use the existing components.
 ```
@@ -50,7 +62,7 @@ to this page and use the existing components.
 ### Improve mobile onboarding
 
 ```text
-Use $reforge to improve our mobile onboarding screens. The first useful
+/reforge improve our mobile onboarding screens. The first useful
 outcome is creating a workspace. Preserve navigation and business logic,
 clarify each step, and check keyboard behavior and permission-denial states.
 ```
@@ -58,7 +70,7 @@ clarify each step, and check keyboard behavior and permission-denial states.
 ### Request a critique
 
 ```text
-Use $reforge to critique this landing page screenshot. Identify the highest
+/reforge critique this landing page screenshot. Identify the highest
 impact improvements to message, hierarchy, typography, and composition.
 Provide recommendations only.
 ```
@@ -90,6 +102,9 @@ The included references cover 22 background treatments and their combination gui
 reforge/
 ├── README.md
 ├── .gitignore
+├── assets/
+│   ├── metaverse-before.png
+│   └── metaverse-after.png
 └── skills/
     └── reforge/
         ├── SKILL.md
