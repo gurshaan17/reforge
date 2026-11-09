@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reforge"
+  short_description: "Redesign landing pages and mobile onboarding"
+  default_prompt: "Use $reforge to audit and redesign this landing page or mobile onboarding flow."
