@@ -21,12 +21,12 @@ Choose your coding agent when prompted. You need Node.js and an agent supported 
 ### 2. Open your agent and give it a target
 
 ```text
-/reforge redesign the landing page in src/app/page.tsx.
+/reforge redesign this project's landing page.
 Make the product and primary action clearer, improve the layout on mobile,
 and preserve our existing colors, fonts, logo, and images.
 ```
 
-Replace the file path with your page or flow. You can also provide screenshots or a URL your agent can access. If your agent uses a different skill invocation syntax, use its equivalent of `/reforge`.
+A file path is optional. Reforge can inspect the current project to find the landing page. If there are several possible targets, name the page or route; the agent should ask when it cannot identify the intended target. You can also provide screenshots or a URL your agent can access. If your agent uses a different skill invocation syntax, use its equivalent of `/reforge`.
 
 ### 3. Review the result
 
@@ -66,13 +66,27 @@ Reforge works within your existing stack and components. Its focus is landing pa
 
 ## Example prompts
 
-### Redesign a landing page
+### Redesign while preserving your brand
 
 ```text
-/reforge audit and redesign the landing page in src/app/page.tsx.
+/reforge audit and redesign this project's landing page.
 Our audience is independent designers. The primary action is starting
 a free trial. Keep our palette, fonts, logo, and product screenshots.
 Implement the changes and check desktop and mobile layouts.
+```
+
+### Redesign from scratch with a new visual identity
+
+Use this when you want to authorize a full visual redesign, including replacing the existing brand elements and imagery:
+
+```text
+/reforge Completely redesign this landing page from scratch. You have
+explicit permission to replace the colors, fonts, theme, layout, copy,
+imagery, and section structure, including removing existing images and
+sections. Treat the current design only as context for understanding the
+product. Choose a fresh, cohesive visual direction suited to the audience,
+and implement it. Preserve factual accuracy, core functionality, and
+working conversion flows.
 ```
 
 ### Polish one page
