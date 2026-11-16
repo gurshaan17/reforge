@@ -33,7 +33,9 @@ Decide the reading order before collapsing columns. Keep each claim with its evi
 
 Reframe media for the available width without hiding meaningful imagery. If a product screenshot becomes illegible, consider a larger stacked presentation or an accessible way to inspect detail. Avoid simply shrinking the desktop composition. Comparison content may need repeated attribute labels to stay understandable when stacked.
 
-Let real content determine where the layout changes. Check intermediate widths as well as desktop and mobile endpoints; long headings and translated or enlarged text can expose failures between breakpoints.
+Let real content determine where the layout changes. Check intermediate widths as well as desktop and mobile endpoints; fluid sizing can soften abrupt jumps, while long headings and translated or enlarged text can expose failures between breakpoints.
+
+For cards or compact lists, line-clamp titles or previews only when consistent heights materially improve scanning. Preserve access to the full text when truncation could hide useful meaning. For long filenames or identifiers, allow breaks within the string when needed to prevent overflow and keep meaningful endings such as extensions visible. Use language-aware hyphenation for narrow prose columns when it improves flow, and inspect the rendered breaks for awkward gaps or fragments.
 
 ## Inspect the composition
 
