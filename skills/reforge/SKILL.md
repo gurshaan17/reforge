@@ -68,6 +68,10 @@ For onboarding work, also read [Mobile onboarding](references/onboarding.md). Ad
 ### Motion and implementation
 
 - Use motion to clarify transitions, focus, or feedback. Respect reduced motion and keep a static equivalent. Introduce continuous effects only when they justify their rendering cost.
+- Choose motion from the interaction's meaning, not from a checklist. As starting points, routine dropdowns may take about 150–250 ms, grouped rows may use a subtle stagger around 30 ms, and a pressed button may scale to about 0.97. Adjust or omit these when the interface, platform, or content calls for something else.
+- Make transient UI feel attached to its cause: popovers can enter from their trigger and return toward it on exit. Keep exits shorter than entrances when that makes dismissal feel responsive; preserve the old state long enough to orient the user as a new state arrives.
+- Use motion to communicate state or physical limits: a restrained pulse can confirm success, a small stretch can emphasize a moving control, and a rubber-band response can mark a drag boundary. Use shared-element movement when an object meaningfully persists between layouts. Scale and blur can help an icon transition, but keep the object recognizable and the effect brief.
+- Favor simple, direct easing for everyday interface changes. Use spring motion or elaborate physical animation when it clarifies the material or interaction, and check that it does not delay task completion. Respect reduced motion and provide an equivalent state change without movement.
 - Implement in the existing architecture, reuse components, and keep design values consistent. Avoid adding a dependency for a treatment that existing tools can deliver.
 - Keep first-render content and actions available while assets load. Size and compress imagery appropriately; reserve media dimensions, load fonts responsibly, and defer below-the-fold assets. Be cautious with large blur filters, animated noise, and full-screen shaders on mobile.
 
