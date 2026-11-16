@@ -21,6 +21,8 @@ Choose the main focal point for each region and make surrounding elements suppor
 
 Use shared alignment lines and a coherent spacing scale across sections. Group related content more closely than unrelated content. Vary density when the story needs a change of pace: a spacious introduction can lead into detailed evidence, followed by a concise action. Avoid mechanically alternating layouts or wrapping every item in a bordered card.
 
+Treat generous whitespace as an option for improving focus and reading comfort, not a goal to maximize. Tune gaps to the content and viewport: preserve breathing room while keeping claims, evidence, and actions visibly connected. Reuse a small spacing scale where it helps consistency, with optical adjustments when the composition needs them.
+
 Set image size according to what the image must communicate. A detailed interface needs more room than a decorative motif. Preserve the full subject and useful context; if an additional detail crop helps, retain access to the original view and avoid implying a feature the product does not have.
 
 Keep a section when it answers a visitor question, provides evidence, or supports an action. If existing sections repeat themselves, improve grouping and emphasis within scope rather than silently removing content.

@@ -45,7 +45,10 @@ Read [Composition](references/composition.md) when choosing or changing page lay
 ### Typography and color
 
 - Define explicit display, heading, body, label, and supporting-text roles using a small token system. Keep existing brand font families and refine their hierarchy; choose new families only where none are established or a typography change is explicitly authorized.
-- Choose type for both character and reading conditions. Tune weight, tracking, line height, and measure together. Start body copy around 16–18 CSS px and 45–75 characters per line, then adapt to the content and platform. Use fluid heading sizes with sensible bounds and intentional wrapping.
+- Consider one typeface, two weights, and three core sizes as a starting point for a cohesive landing page. These are design heuristics, not quotas: adapt to the established brand and add distinctions when the content needs them. Reuse tokens across navigation, buttons, cards, forms, and lower sections.
+- Establish comfortable reading and interaction sizes before building the display hierarchy. Useful starting ranges are 16–18 CSS px for navigation and controls, 16–20 for body copy, 18–22 for hero supporting copy, and 14–16 for secondary captions. These are suggestions, not accessibility thresholds or a requirement to use a separate size for every role. Adjust for the font's apparent size, audience, and viewport; keep essential instructions comfortably readable.
+- Choose type for both character and reading conditions. Tune weight, tracking, line height, and measure together. Start body measure around 45–75 characters per line, then adapt to the content and platform. Use fluid heading sizes with sensible bounds and intentional wrapping.
+- Assess navigation and supporting text relative to the logo, headline, and surrounding space: a reasonable numeric size can still feel too small in the composition. Resolve crowding through spacing, wrapping, or layout changes before shrinking essential text.
 - Test long headlines, real copy, small screens, text enlargement, and font fallbacks. Keep essential content visible at 200% zoom and avoid layouts that depend on one exact line break.
 - Map the existing palette to semantic roles: canvas, surface, text, muted text, accent, border, focus, and status. Check text contrast against the actual rendered background, including its lightest and darkest regions.
 
@@ -70,6 +73,8 @@ For onboarding work, also read [Mobile onboarding](references/onboarding.md). Ad
 ## Verify and finish
 
 Inspect the rendered result at representative desktop and mobile sizes when the environment permits. Check the full page or complete onboarding path, not only the hero. Verify primary actions, forms, keyboard focus, contrast, overflow, touch targets, reduced motion, and relevant existing project checks. For a native flow, check safe areas and keyboard behavior when the available simulator permits it.
+
+Review typography at normal browser zoom as well as enlarged text. Inspect computed sizes for navigation, body copy, controls, and captions where available, then judge their actual appearance in the loaded font. Check that whitespace clarifies grouping and that backgrounds support reading. Following a suggested scale or treatment is not evidence that the rendered page works; correct visibly weak hierarchy or undersized essential text.
 
 Compare the result with the initial weaknesses and the captured brand baseline. Account for every original visible image at desktop and mobile sizes, and check that palette, theme, fonts, logo, and voice remain recognizable. Restore unauthorized substitutions, removals, or hidden imagery before finishing. Fix concrete regressions and unresolved hierarchy problems before stopping. Do not claim conversion gains or performance improvements without measurements, or visual verification without inspecting the rendered output.
 

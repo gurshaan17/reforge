@@ -15,6 +15,8 @@ For a selected treatment, decide:
 
 Evaluate candidates against the actual content, rather than choosing a treatment by industry label. Keep these decisions brief; a separate specification is unnecessary.
 
+Explore shader effects when their atmosphere or interaction meaningfully supports the brand. Treat shader galleries as optional inspiration, not a required dependency or reason to add motion. Adapt the effect's scale, density, contrast, and speed around the content; prefer CSS/SVG or a static asset when they achieve the intended result more simply. For a real-time shader, assess rendering cost on representative devices and provide a static reduced-motion and unsupported-renderer fallback.
+
 ## Treatment palette
 
 | Treatment | Useful character or placement | Implementation and restraint |
